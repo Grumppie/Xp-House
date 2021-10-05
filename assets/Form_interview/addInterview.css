@@ -14,11 +14,11 @@
 }
 
 .form{
-    position: absolute;
+    position: relative;
     width: 50%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-63%);
     display: flex;
     justify-content: center;
     height: 80%;
@@ -66,6 +66,7 @@ form{
 .name .first-name ,.name .last-name{
     align-items: center;
     justify-content: center;
+    flex: 0 0 40%;
 }
 
 input,textarea {
@@ -87,7 +88,7 @@ input:focus,textarea:focus {
 }
 
 label{
-    font-size: 1.4rem;
+    font-size: 24px;
     font-weight: 400;
     transition: 0.3s ease-in;
 }
@@ -112,10 +113,20 @@ textarea{
     margin-bottom: 2rem;
 }
 
+.collage-name{
+    flex: 0 0 40%;
+}
+
+.branch{
+    flex: 0 0 40%;
+}
+
 .graduation{
     width: 50%;
     justify-self: center;
     align-self: center;
+    flex: 0 0 40%;
+    margin-bottom: 2rem;
 }
 
 .personal-details{
@@ -174,4 +185,74 @@ textarea{
 
 .interview-role,.company-name{
     flex:0 0 40%;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1225px) {
+
+    .background{
+        height: 260vh;
+    }
+
+    .container{
+        width: 95%;
+        padding: 1rem;
+    }
+
+    h1{
+        font-size: 1.6rem;
+    }
+
+    input,textarea{
+        padding: 0.2rem;
+    }
+    label{
+        font-size: 14px;
+    }
+    .form{
+        width: 50%;
+        padding-left: 2rem;
+    }
+
+    .title h1 {
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+    .title i{
+        display: block;
+    }
+    .heading h1{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .form{
+        transform: translate(-52%,-63%);
+    }
+    .background{
+        height: 280vh;
+    }
+    label{
+        font-size: 10px;
+    }
+    .form{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .form{
+        transform: translate(-52%,-63%);
+    }
+    .background{
+        height: 280vh;
+    }
+    label{
+        font-size: 10px;
+    }
+    .form{
+        width: 90%;
+    }
 }
