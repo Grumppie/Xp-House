@@ -242,12 +242,12 @@ textarea{
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 360px) {
     .form{
         transform: translate(-52%,-63%);
     }
     .background{
-        height: 280vh;
+        height: 350vh;
     }
     label{
         font-size: 10px;
